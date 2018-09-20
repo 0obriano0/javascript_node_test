@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- 確保 IE 是使用最新版本呈現的相容模式 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- 確保適當的呈現和觸控縮放效果，加入檢視區域（viewport）的 meta 標籤 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Bootstrap 基礎範本</title>
+
+        <!-- Bootstrap 核心 CSS 文件 -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- HTML5 Shiv 和 Respond.js 用於讓 IE8 支持 HTML5元素和媒體查詢 。
+警告：Respond.js 無法在 file:// 協定下運作 -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+        <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery)，務必在bootstrap.min.js 之前引入 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap 核心 JavaScript 文件 -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <style>
+            body { background-color: #333; color: #fff; }
+
+            #yellowblock { width: 100vw; height: 5px; background: #f0ad4e; }
+
+            .container img { width: 100%; }
+            .row ul { margin: 40px; }
+            .row ul li { width: 23%; padding: 1%; box-sizing: border-box; text-align: center; }
+            .row ul li a { font-size: 18px; font-weight: 800; padding: 0.3em 2em; color: #f0ad4e;}
+            .row ul li:not(:first-child) a.btn:hover { color: #a57737; background-color: black; border-radius: 4px; }
+            .row div .list-inline li .btn-warning { color: black; }
+
+            .row div p.h4 { line-height: 1.5em; }
+            .row div p.h4 a { color: #f0ad4e; }
+
+            @media (max-width: 830px){
+                .h_o_m { display: none; }
+            }
+                
+        </style>
+    </head>
+
+    <body>
+        <div id="yellowblock"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/logo-2x.png" alt="">
+                </div>
+                <div class="col-md-8">
+                    <ul class="list-inline">
+                        <li><a href="" class="btn btn-warning">概述</a></li>
+                        <li><a href="" class="btn">文件</a></li>
+                        <li><a href="" class="btn">新聞</a></li>
+                        <li><a href="" class="btn"><span class="h_o_m">View on </span>GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 h1"><P>將純文字轉靜態網站和部落格</P></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="h1">簡單</p>
+                    <p class="h4">無需數據庫、評論功能，不需要不斷的更新版本——只用關心<em>你的部落格內容。</em></p>
+                    <p class="h4"><a href="#">Jekyll 是如何工作的 &rarr;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p class="h1">靜態</p>
+                    <p class="h4">只用 <a href="#">Markdown</a> (或 <a href="#">Textile</a>)、<a href="#">Liquid</a>、HTML <span class="amp">&amp;</span> CSS 就可以構建可部署的靜態網站。</p>
+                    <p class="h4"><a href="#">Jekyll 模版指南 &rarr;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p class="h1">部落格形態</p>
+                    <p class="h4">自定義地址、分類、頁面、部落格內容 以及 自定義的佈局設計 都是系統中的一等公民。</p>
+                    <p class="h4"><a href="#">遷移你的部落格 &rarr;</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
